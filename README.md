@@ -4,22 +4,20 @@ El presente documento es una guía para la instalación de este tema de Jekyll d
 
 Sigue los siguientes pasos:
 
-1. Crea un repositorio en GitHub y conviértelo en **GitHub Pages**. 
+1. Crea un fork de este repositorio
+
+2. Conviértelo en **GitHub Pages**. 
    Visita la url `https://github.com/usuario/repo/settings/pages` y sigue los pasos.
 
-2. Clónalo en local
-
-3. Descarga este repo y descomprímelo en el tuyo
-
-4. Modifica el archivo `_config.yml`
+3. Modifica el archivo `_config.yml`
 
    ```
    github_username:  usuario
    github_repo:  usuario/tu-nombre-de-tu-repo
    baseurl: /tu-nombre-de-tu-repo
    ```
-5.  Modifica los archivos `index.html`  e `index-popup.html` y adáptalos a tus necesidades.
-6. Sube todos los archivos a GitHub
+4. Modifica los archivos `index.html`  e `index-popup.html` y adáptalos a tus necesidades.
+5. Sube todos los archivos a GitHub
 
    ```
    git add .
@@ -27,7 +25,7 @@ Sigue los siguientes pasos:
    git push
    ```
 
-7. Al poco tiempo tendrás la primera versión de tu web en `https://usuario.github.io/repo/`
+6. Al poco tiempo tendrás la primera versión de tu web en `https://usuario.github.io/repo/`
 
 ## Cómo crear un nuevo post
 
