@@ -210,3 +210,51 @@ document.querySelectorAll('div.highlighter-rouge').forEach(el => {
         addClass(newNode, 'hidden');
     });
 });
+
+
+document.querySelectorAll('blockquote p.task').forEach(el => {
+   	addClass(el.parentElement, "task");
+});
+
+document.querySelectorAll('blockquote p.reto').forEach(el => {
+   	addClass(el.parentElement, "reto");
+});
+
+document.querySelectorAll('blockquote p.hint').forEach(el => {
+   	addClass(el.parentElement, "hint");
+});
+
+document.querySelectorAll('blockquote p.info').forEach(el => {
+   	addClass(el.parentElement, "info");
+});
+
+document.querySelectorAll('blockquote p.warning').forEach(el => {
+   	addClass(el.parentElement, "warning");
+});
+
+document.querySelectorAll('blockquote p.alert').forEach(el => {
+   	addClass(el.parentElement, "alert");
+});
+
+document.querySelectorAll('blockquote p.toogle').forEach(el => {
+   	
+   	var firstParagraf = el.parentNode.querySelector("p");
+   	//<summary>Click to toggle contents of `code`</summary>
+	var that = el.parentElement;
+
+	var p = document.createElement('details');
+	addClass(p, "toogle");
+
+	// move all elements in the other container.
+	while(that.firstChild) {
+		p.appendChild(that.firstChild);
+	}
+	that.parentNode.replaceChild(p,that);
+	
+	const newNode = document.createElement("summary");
+	newNode.innerHTML = firstParagraf.innerText;
+	el.parentElement.insertBefore(newNode, el.parentElement.firstChild);
+	el.parentElement.removeChild(firstParagraf);
+});
+
+
