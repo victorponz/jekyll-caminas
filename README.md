@@ -62,5 +62,58 @@ Ahora ejecuta este comando:
 pandoc _posts/nombre-de-archivo.md --pdf-engine=xelatex --resource-path=.:/home/victorponz/Documentos/2020-21/Ciberseguridad/..  -o assets/pdf/nombre-de-archivo.pdf --template=eisvogel.tex --toc --highlight-style tango --filter pandoc-latex-environment --variable urlcolor=cyan
 ```
 
+## Goodies
 
+Se ha añadido la posibilidad de crear diferentes cajas de texto.
 
+### Tarea
+
+![](assets/img/tarea.png)
+
+El código markdown que la genera es el siguiente:
+
+<div style='border: 1px solid black; padding:8px'>
+<p>
+> -task-Lorem ipsum dolor sit amet
+</p>
+<p>
+> Resto de markdown
+</p>
+</div>
+Es decir, el **blockquote** debe empezar con la etiqueta `task` entre dos guiones `-`.
+El resto de markdown se renderizará normalmente.
+
+### Reto
+
+Cambia la etiqueta por `reto`
+
+![](assets/img/reto.png)
+
+### Alerta
+
+Cambia la etiqueta por `alert`
+
+![](assets/img/alert.png)
+
+### Info
+
+Cambia la etiqueta por `info`
+
+![](assets/img/info.png)
+
+### Pista
+
+Cambia la etiqueta por `hint`
+![](assets/img/pista.png)
+
+### Aviso
+
+Cambia la etiqueta por `warning`
+
+![](assets/img/aviso.png)
+
+### Toogle
+
+Cambia la etiqueta por `toogle`. En este caso, el primer párrafo que escribamos se convierte en el texto del `toogle`
+
+![](assets/img/toogle.gif)
