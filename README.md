@@ -80,6 +80,7 @@ El código markdown que la genera es el siguiente:
 > Resto de markdown
 </p>
 </div>
+
 Es decir, el **blockquote** debe empezar con la etiqueta `task` entre dos guiones `-`.
 El resto de markdown se renderizará normalmente.
 
