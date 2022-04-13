@@ -31,9 +31,9 @@ Sigue los siguientes pasos:
 
 Los post se deben guardar dentro de la carpeta `_posts` y deben seguir el formato `yyyy-mm-dd-nombre-del-post.md`
 
-En el `front-matter` aparecen muchos campos que creo que son auto-explicables y permiten cambiar por ejemplo el título, el `tema` (en la variable `categories`), el directorio en el que están las imágenes, etc.
+En el `front-matter` aparecen muchos campos que creo que son auto-explicables y permiten cambiar por ejemplo el título, el `tema` (en la variable `categories`), el directorio en el que están las imágenes, el `permalink`, es decir, el texto de la url que generará, etc.
 
-El `tema` es importante porque discrimina en qué apartado de la página de portada aparece el enlace al post:
+`categories` es importante porque discrimina en qué apartado de la página de portada aparece el enlace al post:
 
 ```jade
 <h3>Tema 1 - Introducción</h3>
@@ -45,6 +45,7 @@ El `tema` es importante porque discrimina en qué apartado de la página de port
 {% endfor %}
 </ol>
 ```
+Aunque se puede prescindir de la categoría y mostrar todos los posts
 
 ## Cómo generar el pdf
 
