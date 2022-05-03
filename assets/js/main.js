@@ -279,3 +279,15 @@ document.querySelectorAll('code.language-sequence').forEach((el , i) => {
 document.querySelectorAll('code.language-mermaid').forEach((el , i) => {
    	addClass(el, "mermaid");
 });
+
+//Flowchart
+document.querySelectorAll('code.language-flow').forEach((el , i) => {
+   	addClass(el.parentElement, "language-flow");
+   	const newNode = document.createElement("div");
+    	newNode.id= 'flow-diagram-' + i;
+        el.parentElement.insertBefore(newNode, el.parentElement.firstChild);
+        var diagram = flowchart.parse(el.innerText);
+        diagram.drawSVG(newNode.id);
+        addClass(el, "hidden");
+});
+
