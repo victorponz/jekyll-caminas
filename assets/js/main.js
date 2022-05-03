@@ -275,4 +275,7 @@ document.querySelectorAll('code.language-sequence').forEach((el , i) => {
         addClass(el, "hidden");
 });
 
-
+//Mermaid
+document.querySelectorAll('code.language-mermaid').forEach((el , i) => {
+   	addClass(el, "mermaid");
+});
